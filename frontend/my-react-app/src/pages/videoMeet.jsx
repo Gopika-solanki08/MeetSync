@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import styles from "../styles/videoComponent.module.css";
 import TextField from "@mui/material/TextField";
-import { Badge, Button, IconButton, useForkRef } from "@mui/material";
+import { Badge, Button, IconButton } from "@mui/material";
 import { io } from "socket.io-client";
 import VideocamIcon from "@mui/icons-material/Videocam";
 import VideocamOffIcon from "@mui/icons-material/VideocamOff";
@@ -43,7 +43,6 @@ export default function VideoMeetComponent() {
   let [askForUsername, setAskForUsername] = useState(true);
   let [username, setUsername] = useState("");
 
-  const videoRef = useRef([]);
   let [videos, setVideos] = useState([]);
 
   const getPermissions = async () => {
@@ -95,7 +94,7 @@ export default function VideoMeetComponent() {
 
   useEffect(() => {
     getPermissions();
-  }, []);
+  }, [getPermissions]);
 
   let getUserMediaSuccess = (stream) => {
     try {
