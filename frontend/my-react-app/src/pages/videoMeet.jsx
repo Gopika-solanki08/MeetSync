@@ -13,7 +13,7 @@ import StopScreenShareIcon from "@mui/icons-material/StopScreenShare";
 import ChatIcon from "@mui/icons-material/Chat";
 import { useNavigate } from "react-router-dom";
 
-const server_url = "http://localhost:8000"; // websocket server
+const server_url = "https://meetsync-0c0k.onrender.com"; // websocket server
 
 var connections = {};
 
