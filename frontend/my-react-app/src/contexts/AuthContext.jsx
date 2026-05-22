@@ -8,7 +8,7 @@ import axios from "axios";
 export const AuthContext = createContext({});
 
 const client = axios.create({
-    baseURL: "https://meetsync-0c0k.onrender.com"
+    baseURL: "https://meetsync-0c0k.onrender.com/api/v1/users"
 })
 
 export const AuthProvider = ({children}) => {
