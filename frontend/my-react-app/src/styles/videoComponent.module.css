@@ -37,7 +37,7 @@
 }
 
 .buttonContainers svg {
-    font-size: 2rem;
+    font-size: 1.4rem;
     color: white;
     transition: 0.3s;
 }
@@ -142,10 +142,15 @@
     justify-content: center;
     gap: 10px;
     padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    
   }
 
   .chatRoom {
     width: 100%;
+    height: 60%;
   }
 
   .chattingArea {
