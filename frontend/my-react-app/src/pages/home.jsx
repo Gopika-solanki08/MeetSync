@@ -57,11 +57,17 @@ function HomeComponent() {
 
           <div className="inputBox">
             <TextField
+              value={meetingCode}
               onChange={(e) => setMeetingCode(e.target.value)}
               label="Meeting Code"
               variant="filled"
               fullWidth
-              InputProps={{ style: { background: "white" } }}
+              autoComplete="off"
+              InputProps={{
+                style: {
+                  background: "white",
+                },
+              }}
             />
 
             <Button

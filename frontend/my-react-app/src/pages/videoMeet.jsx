@@ -330,8 +330,7 @@ export default function VideoMeetComponent() {
     }
   };
 
-  let getMedia = async () => {
-    
+  let getMedia = async () => { 
     try {
       const stream = await navigator.mediaDevices.getUserMedia({
         video: true,
