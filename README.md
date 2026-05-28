@@ -110,6 +110,12 @@ npm run dev
 
 ---
 
+🔗 Live Link :
+
+https://meet-sync-taupe.vercel.app/
+
+---
+
 👩‍💻 Author
 
 Gopika Solanki
